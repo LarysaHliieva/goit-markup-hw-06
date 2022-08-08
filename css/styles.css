@@ -21,6 +21,10 @@
   --primary-border-color: #eeeeee;
   --secondary-border-color: #ececec;
 
+  --input-border-color: rgba(33, 33, 33, 0.2);
+  --input-border-color-theme-dark: rgba(255, 255, 255, 0.3);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+
   --item-set-gap: 30px;
 
   --timing-func: cubic-bezier(0.4, 0, 0.2, 1);
@@ -566,7 +570,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--input-border-color-theme-dark);
   border-radius: 4px;
   color: var(--white-color);
   background-color: transparent;
@@ -820,7 +824,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--input-border-color);
   border-radius: 4px;
 
   transition: border-color var(--duration) var(--timing-func);
@@ -858,7 +862,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--placeholder-color);
 }
 
 .modal-form-input:focus,
